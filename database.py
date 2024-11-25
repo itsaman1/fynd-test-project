@@ -5,7 +5,7 @@ from models import Base
 
 DATABASE_URL = "sqlite:///database.db"
 
-engine = create_engine(DATABASE_URL)
+engine = create_engine("mysql+pymysql://itsaman22:Roorkee2207@itsaman22.mysql.pythonanywhere-services.com:3306/fynd")
 Base.metadata.create_all(engine)
 
 Session = sessionmaker(bind = engine)
